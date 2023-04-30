@@ -1,6 +1,7 @@
 import React from "react";
 import Pfp from "../assets/images/pfp.jpg";
 import "../styles/MainSection.css";
+import CVButton from "./CVButton";
 
 function MainSection() {
 	return (
@@ -10,9 +11,11 @@ function MainSection() {
 			</div>
 			<div className="main-section__text">
 				<h4 className="main-section__text__title">
-					Hi, I'm Alea, a Frontend Developer from Moldova.
+					Hi, I'm Alea,
+					<br /> a Frontend Developer from Moldova.
 				</h4>
 			</div>
+			<CVButton />
 		</div>
 	);
 }
