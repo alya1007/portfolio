@@ -8,6 +8,40 @@
 .email-bar {
 	flex: 1;
 	text-align: left;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.email-bar__button {
+	padding: 0;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.email-bar__icon {
+	height: 100%;
+	width: 100%;
+	color: #a3a3a3;
+	transition: 0.2s;
+}
+
+.email-bar__icon:hover {
+	color: #5a5a5a;
+}
+
+.email-bar__text {
+	padding: 0;
+	margin: 0 3%;
+	font-weight: 400;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.email-bar__text:hover {
+	color: #5a5a5a;
 }
 
 .contact-links {

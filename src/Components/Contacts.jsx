@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Contacts.css";
 import ContactLink from "./ContactLink";
+import EmailButton from "./EmailButton";
 
 function Contacts() {
 	const contactLinks = [
@@ -18,7 +19,10 @@ function Contacts() {
 	return (
 		<div>
 			<div className="container">
-				<div className="email-bar">Get in touch</div>
+				<div className="email-bar">
+					<EmailButton />
+					<h3 className="email-bar__text">Get in touch</h3>
+				</div>
 				<div className="contact-links">
 					<ContactLink
 						link={contactLinks[0].link}
