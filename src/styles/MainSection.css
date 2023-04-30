@@ -1,0 +1,12 @@
+.main-section {
+	margin: 2%;
+}
+
+.main-section__image img {
+	width: 10%;
+	border-radius: 50%;
+}
+
+.main-section__text__title {
+	font-weight: 400;
+}
