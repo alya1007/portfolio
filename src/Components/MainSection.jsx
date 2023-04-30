@@ -10,15 +10,8 @@ function MainSection() {
 			</div>
 			<div className="main-section__text">
 				<h4 className="main-section__text__title">
-					Hi, I'm <span className="main-section__text__title__name">Alea</span>
+					Hi, I'm Alea, a Frontend Developer from Moldova.
 				</h4>
-				<p className="main-section__text__description">
-					I'm a{" "}
-					<span className="main-section__text__description__highlight">
-						Frontend Developer
-					</span>{" "}
-					from Moldova.
-				</p>
 			</div>
 		</div>
 	);
