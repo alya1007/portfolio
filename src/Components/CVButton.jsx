@@ -5,15 +5,22 @@ import myCV from "../cv/AlexandraKonjevicCV.pdf";
 
 function CVButton() {
 	const handleDownload = () => {
-		const url = URL.createObjectURL(
-			new Blob([myCV], { type: "application/pdf" })
-		);
-		const link = document.createElement("a");
-		link.href = url;
-		link.download = "AlexandraKonjevicCV.pdf";
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
+		const xhr = new XMLHttpRequest();
+		xhr.open("GET", myCV, true);
+		xhr.responseType = "blob";
+		xhr.onload = function () {
+			if (this.status === 200) {
+				const blob = new Blob([this.response], { type: "application/pdf" });
+				const url = URL.createObjectURL(blob);
+				const link = document.createElement("a");
+				link.href = url;
+				link.download = "mycv.pdf";
+				document.body.appendChild(link);
+				link.click();
+				document.body.removeChild(link);
+			}
+		};
+		xhr.send();
 	};
 	return (
 		<button className="cv-button" onClick={handleDownload}>
