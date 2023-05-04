@@ -1,5 +1,5 @@
 .container {
-	padding: 2.5%;
+	padding: 1%;
 	border-bottom: 0.2px solid #5a5a5a39;
 	display: flex;
 	flex-direction: row;
@@ -19,34 +19,36 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	padding: 3%;
+	background-color: #25252539;
+	border-radius: 50%;
+	border: 3px solid #5a5a5a39;
+	margin: 0px;
 }
 
 .email-bar__icon {
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	color: #a3a3a3;
 	transition: 0.2s;
 }
 
 .email-bar__icon:hover {
-	color: #5a5a5a;
+	color: white;
 }
 
 .email-bar__text {
 	padding: 0;
 	margin: 0 3%;
 	font-weight: 400;
-	cursor: pointer;
 	transition: 0.2s;
-}
-
-.email-bar__text:hover {
-	color: #5a5a5a;
 }
 
 .contact-links {
 	flex: 1;
-	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .contact-link {
