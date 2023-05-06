@@ -50,3 +50,9 @@
 	margin: auto;
 	font-size: 3rem;
 }
+
+.carousel-item__title {
+	font-size: 1rem;
+	margin: 100% auto;
+	text-align: center;
+}
