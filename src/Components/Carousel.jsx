@@ -1,66 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import CarouselItem from "./CarouselItem";
-import {
-	TbBrandJavascript,
-	TbBrandHtml5,
-	TbBrandCss3,
-	TbBrandReact,
-	TbBrandTypescript,
-	TbBrandTailwind,
-	TbBrandRedux,
-	TbBrandBootstrap,
-} from "react-icons/tb";
-import { SiAntdesign, SiJquery } from "react-icons/si";
+import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 
-function Carousel() {
-	const items = [
-		{
-			itemIcon: <TbBrandJavascript className="carousel-item__icon" />,
-			title: "JavaScript",
-		},
-		{
-			itemIcon: <TbBrandHtml5 className="carousel-item__icon" />,
-			title: "HTML5",
-		},
-		{
-			itemIcon: <TbBrandCss3 className="carousel-item__icon" />,
-			title: "CSS3",
-		},
-		{
-			itemIcon: <TbBrandReact className="carousel-item__icon" />,
-			title: "React",
-		},
-		{
-			itemIcon: <TbBrandTypescript className="carousel-item__icon" />,
-			title: "TypeScript",
-		},
-		{
-			itemIcon: <TbBrandTailwind className="carousel-item__icon" />,
-			title: "TailwindCSS",
-		},
-		{
-			itemIcon: <TbBrandRedux className="carousel-item__icon" />,
-			title: "Redux",
-		},
-		{
-			itemIcon: <TbBrandBootstrap className="carousel-item__icon" />,
-			title: "Bootstrap",
-		},
-		{
-			itemIcon: <SiAntdesign className="carousel-item__icon" />,
-			title: "Ant Design",
-		},
-		{
-			itemIcon: <SiJquery className="carousel-item__icon" />,
-			title: "jQuery",
-		},
-	];
+function Carousel({ items }) {
+	const [currentIndex, setCurrentIndex] = useState(0);
+
+	const handlePrevClick = () => {
+		setTimeout(() => {
+			setCurrentIndex((prevIndex) =>
+				prevIndex === 0 ? items.length - 1 : prevIndex - 1
+			);
+		}, 200);
+		const carouselItems = document.querySelector(".carousel-items");
+		carouselItems.style.transform = `translateX(${100 / 70}%)`;
+		setTimeout(() => {
+			carouselItems.style.transform = "";
+		}, 200);
+	};
+
+	const handleNextClick = () => {
+		setTimeout(() => {
+			setCurrentIndex((prevIndex) =>
+				prevIndex === items.length - 1 ? 0 : prevIndex + 1
+			);
+		}, 200);
+		const carouselItems = document.querySelector(".carousel-items");
+		carouselItems.style.transform = `translateX(-${100 / 70}%)`;
+		setTimeout(() => {
+			carouselItems.style.transform = "";
+		}, 200);
+	};
+
+	const visibleItems = [];
+	for (let i = 0; i < 3; i++) {
+		const itemIndex = (currentIndex + i) % items.length;
+		visibleItems.push(items[itemIndex]);
+	}
 
 	return (
 		<div className="carousel">
-			{items.map((item, index) => (
-				<CarouselItem key={index} itemIcon={item.itemIcon} title={item.title} />
-			))}
+			<button onClick={handlePrevClick} className="carousel-button">
+				<MdNavigateBefore />
+			</button>
+			<div className="carousel-items">
+				{visibleItems.map((item) => (
+					<CarouselItem
+						key={item.title}
+						itemIcon={item.itemIcon}
+						title={item.title}
+					/>
+				))}
+			</div>
+			<button onClick={handleNextClick} className="carousel-button">
+				<MdNavigateNext />
+			</button>
 		</div>
 	);
 }

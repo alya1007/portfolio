@@ -4,7 +4,7 @@ function CarouselItem({ itemIcon, title }) {
 	return (
 		<div className="carousel-item">
 			{itemIcon}
-			<h3 className="carousel-item__title">{title}</h3>
+			<div className="carousel-item__title">{title}</div>
 		</div>
 	);
 }

@@ -1,12 +1,12 @@
 .skill-section {
 	width: 100%;
 	margin: 5% auto;
-	border-radius: 40px;
+	border-radius: 70px;
 	background-color: rgb(31, 31, 31);
 }
 
 .skill-section__content {
-	padding: 7% 18%;
+	padding: 7% 5%;
 	display: flex;
 	flex-direction: column;
 }
@@ -16,43 +16,51 @@
 	font-size: 1.8rem;
 }
 
+.skill-section__description {
+	padding: 0 16%;
+	margin-bottom: 3%;
+}
+
 .carousel {
 	display: flex;
-	justify-content: center;
-	margin: 5% 0;
+	justify-content: space-between;
+	margin: 2% auto;
+	width: 100%;
+	align-items: center;
+}
+
+.carousel-items {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	transition: transform 0.2s ease-in-out;
+}
+
+.carousel-button {
+	background-color: #ffffff00;
+	border: none;
+	font-size: 3rem;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .carousel-item {
-	font-size: 1.5rem;
-	font-weight: 900;
-	padding: 4.5%;
-	position: relative;
-	width: 50px;
-	height: 50px;
-	margin: 0 5%;
-}
-
-.carousel-item::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	border-radius: 50%;
-	padding: 12px;
-	background: linear-gradient(45deg, #ff31a6, #5b41b0);
-	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-	mask-composite: exclude;
+	font-size: 1rem;
+	font-weight: 800;
 }
 
 .carousel-item__icon {
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 	margin: auto;
-	font-size: 3rem;
+	font-size: 2.5rem;
+	background: linear-gradient(rgb(31, 31, 31), rgb(31, 31, 31)) padding-box,
+		linear-gradient(to right, darkblue, darkorchid) border-box;
+	border-radius: 50%;
+	border: 10px solid transparent;
 }
 
 .carousel-item__title {
-	font-size: 1rem;
-	margin: 100% auto;
-	text-align: center;
+	margin-top: 20%;
+	font-size: 1.1rem;
 }
