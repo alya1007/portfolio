@@ -1,6 +1,47 @@
 .about-section {
-	box-sizing: border-box;
-	width: 100%;
 	background-color: white;
 	color: black;
+	padding: 10% 0;
+}
+
+.about-section__content {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 50%;
+	border: 2px solid black;
+	/* border-radius: 30px; */
+	padding: 3%;
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to right, rgb(51, 0, 139), darkorchid) border-box;
+	border-radius: 30px;
+	border: 7px solid transparent;
+}
+
+.about-section__image {
+	border-radius: 10%;
+	height: 300px;
+}
+
+.about-section__text {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: space-between;
+	margin-left: 3%;
+}
+
+.about-section__title {
+	margin: 0;
+	padding: 0;
+}
+
+.about-section__subtitle {
+	margin: 1% 0;
+	padding: 0;
+}
+
+.about-section__description {
+	margin: 0;
+	padding: 0;
 }
