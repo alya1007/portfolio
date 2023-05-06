@@ -11,8 +11,8 @@ function MainSection() {
 			</div>
 			<div className="main-section__text">
 				<h4 className="main-section__text__title">
-					Hi, I'm Alea,
-					<br /> a Frontend Developer from Moldova.
+					Hi, I'm Alexandra,
+					<br /> a Frontend Developer.
 				</h4>
 			</div>
 			<CVButton />

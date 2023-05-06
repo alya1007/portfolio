@@ -1,5 +1,7 @@
 .main-section {
 	margin-top: 5%;
+	width: 70%;
+	margin: auto;
 }
 
 .main-section__image img {
