@@ -8,6 +8,9 @@
 	margin-top: 5%;
 	width: 12%;
 	border-radius: 50%;
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to right, rgb(51, 0, 139), rgb(196, 78, 255)) border-box;
+	border: 7px solid transparent;
 }
 
 .main-section__text__title {

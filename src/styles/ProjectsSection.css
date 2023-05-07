@@ -1,0 +1,36 @@
+.projects-section__content {
+	width: 70%;
+	margin: 10% auto;
+}
+
+.projects-section__title {
+	text-align: left;
+	margin-bottom: 1%;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.projects-section__description {
+	margin-top: 0;
+	font-size: 1.1rem;
+	text-align: justify;
+	font-weight: 400;
+	text-justify: inter-character;
+}
+
+.projects-section__projects {
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.3rem; /* This adds some spacing between grid items */
+}
+
+.projects-section__project {
+	margin: 0;
+	padding: 0;
+}
+
+.projects-section__thumbnail {
+	width: 100%;
+	height: 100%;
+}

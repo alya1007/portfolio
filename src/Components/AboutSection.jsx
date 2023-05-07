@@ -9,7 +9,7 @@ function AboutSection() {
 			<div className="about-section__content">
 				<img src={aboutImg} alt="" className="about-section__image" />
 				<div className="about-section__text">
-					<h3 className="about-section__title">About me</h3>
+					<h5 className="about-section__title">About me</h5>
 					<h2 className="about-section__subtitle">
 						A dedicated frontend developer from Moldova{" "}
 						<span>
