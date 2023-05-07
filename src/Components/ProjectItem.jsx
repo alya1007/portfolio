@@ -1,4 +1,6 @@
 import React from "react";
+import ProjectButton from "./ProjectButton";
+import { VscGithubAlt, VscLinkExternal } from "react-icons/vsc";
 
 function ProjectItem({ thumbnail, title, description, githubLink, liveLink }) {
 	return (
@@ -8,8 +10,16 @@ function ProjectItem({ thumbnail, title, description, githubLink, liveLink }) {
 				<h3 className="project-item__title">{title}</h3>
 				<p className="project-item__description">{description}</p>
 				<div className="project-item__links">
-					<a href="#">link1</a>
-					<a href="#">link2</a>
+					<ProjectButton
+						link={githubLink}
+						icon={<VscGithubAlt />}
+						text="GitHub"
+					/>
+					<ProjectButton
+						link={liveLink}
+						icon={<VscLinkExternal />}
+						text="Demo"
+					/>
 				</div>
 			</div>
 		</div>
