@@ -26,6 +26,14 @@
 	height: 450px;
 }
 
+.ReactCardFlipCardBack {
+	transform: rotateY(180deg);
+}
+
+.ReactCardFlipCard.flipped {
+	transform: rotateY(180deg);
+}
+
 .project-item {
 	margin: 0;
 	padding: 0;
@@ -34,6 +42,8 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	height: 100%;
+	cursor: pointer;
 }
 
 .project-item__thumbnail {
@@ -92,6 +102,7 @@
 
 .project-item__description {
 	width: 70%;
+	font-size: 0.8rem;
 	margin: 5px auto 0;
 }
 
@@ -138,4 +149,25 @@
 .project-item__button__text {
 	font-weight: 100;
 	margin-left: 5px;
+}
+
+.project-item__back {
+	background-color: white;
+	color: #220554;
+	border-radius: 30px;
+	padding: 0 10%;
+	font-size: 0.8rem;
+}
+
+.project-item__stack {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	color: #220554d1;
+}
+
+.project-item__stack i {
+	margin: 0 5px;
 }

@@ -19,8 +19,10 @@ function ProjectsSection() {
 							thumbnail={project.thumbnail}
 							title={project.title}
 							description={project.description}
+							detailedDescription={project.detailedDescription}
 							githubLink={project.githubLink}
 							liveLink={project.liveLink}
+							stack={project.stack}
 						/>
 					))}
 				</div>

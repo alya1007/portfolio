@@ -1,3 +1,6 @@
+import { TbBrandReact, TbBrandTailwind } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+
 const thumbnailContext = require.context(
 	"./assets/images/thumbnails/",
 	false,
@@ -11,7 +14,10 @@ const projectsData = [
 		id: 1,
 		title: "Project 1",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[0],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
@@ -19,7 +25,10 @@ const projectsData = [
 		id: 2,
 		title: "Project 2",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[1],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
@@ -27,7 +36,10 @@ const projectsData = [
 		id: 3,
 		title: "Project 3",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[2],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
@@ -35,7 +47,10 @@ const projectsData = [
 		id: 4,
 		title: "Project 4",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[3],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
@@ -43,7 +58,10 @@ const projectsData = [
 		id: 5,
 		title: "Project 5",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[4],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
@@ -51,7 +69,10 @@ const projectsData = [
 		id: 6,
 		title: "Project 6",
 		description: "Lorem ipsum dolor sit amet consectetur.",
+		detailedDescription:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		thumbnail: thumbnailImages[5],
+		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
 		githubLink: "#",
 		liveLink: "#",
 	},
