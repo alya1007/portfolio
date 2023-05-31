@@ -1,5 +1,5 @@
 import { TbBrandReact, TbBrandTailwind } from "react-icons/tb";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiVite } from "react-icons/si";
 
 const thumbnailContext = require.context(
 	"./assets/images/thumbnails/",
@@ -12,13 +12,13 @@ const thumbnailImages = thumbnailContext.keys().map(thumbnailContext);
 const projectsData = [
 	{
 		id: 1,
-		title: "Project 1",
-		description: "Lorem ipsum dolor sit amet consectetur.",
+		title: "Oasis",
+		description: "Website with the best articles you can find.",
 		detailedDescription:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"This website leverages the power of Vite and React.js to deliver a highly performant and responsive user interface. By utilizing Vite's fast bundling and hot module replacement, the website ensures quick and efficient loading of content, resulting in a seamless browsing experience.",
 		thumbnail: thumbnailImages[0],
-		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
-		githubLink: "#",
+		stack: [<TbBrandReact />, <SiVite />],
+		githubLink: "https://github.com/alya1007/oasis",
 		liveLink: "#",
 	},
 	{
