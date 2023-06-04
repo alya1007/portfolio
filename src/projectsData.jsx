@@ -1,4 +1,4 @@
-import { TbBrandReact, TbBrandTailwind } from "react-icons/tb";
+import { TbBrandReact, TbBrandTailwind, TbBrandRedux } from "react-icons/tb";
 import { SiTypescript, SiVite } from "react-icons/si";
 
 const thumbnailContext = require.context(
@@ -23,13 +23,18 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "Project 2",
-		description: "Lorem ipsum dolor sit amet consectetur.",
+		title: "Tracker Pro",
+		description: "Application for task management.",
 		detailedDescription:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"This website, made with ReactJS, Redux, Vite and TailwindCSS, is a simple task management application that allows users to add, edit, and delete tasks. It also features a dark mode toggle that persists across sessions.",
 		thumbnail: thumbnailImages[1],
-		stack: [<TbBrandReact />, <SiTypescript />, <TbBrandTailwind />],
-		githubLink: "#",
+		stack: [
+			<TbBrandReact />,
+			<TbBrandRedux />,
+			<SiVite />,
+			<TbBrandTailwind />,
+		],
+		githubLink: "https://github.com/alya1007/tracker-pro",
 		liveLink: "#",
 	},
 	{
